@@ -1,0 +1,59 @@
+body {
+    background-image: url(img/fondo.jpg);
+}
+
+.menuSup {
+   
+}
+
+.nombreMenu {
+    font-weight: 700;
+    color: rgb(139, 139, 243);
+}
+.titulo {
+    font-size: 5vw;
+	text-align: center;   
+	margin: 0;
+	color: rgb(8, 8, 8);
+	font-family: cursive;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		to right,
+		orangered,
+		orange,
+		gold,
+		lightgreen,
+		cyan,
+		dodgerblue,
+		mediumpurple,
+		hotpink,
+		orangered);
+	background-size: 110vw;
+	animation: sliding 70s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes sliding {
+	to {
+		background-position: -2000vw;
+	}
+}
+
+.descripcion {
+    text-align: center;
+    justify-content: center;
+    margin-left: 5ch;
+    margin-right: 5ch;
+
+}
+
+.imagen1 {
+    margin-top: 10ch;
+    margin-left: 5ch;
+}
+
+.cuadros{
+    display: flex;
+}
