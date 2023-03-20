@@ -12,70 +12,72 @@
 </head>
 <body>
 <!----------------MENU SUPERIOR-------------------->
-<a class="navbar-brand menuSup" href="#">
-    <img src="img/arlequinMusico.jpeg" style="border: radius 40px; margin-left: 5ch;" alt="" width="35" height="28">
-  </a>
-    <a class="btn menuSup" data-bs-toggle="offcanvas" href="index.html" role="button" aria-controls="offcanvasExample">
-        Mendez
-      </a>
-      <button class="btn btn-secundary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        Menu
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mendez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <!-----------DESLISABLE--------------------->
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            En este apartado tendra toda la informacion necesaria.
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Opciones
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Mi historia</a></li>
-              <li><a class="dropdown-item" href="#">Galeria</a></li>
-              <li><a class="dropdown-item" href="#">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="https://opensea.io/collection/untitled-collection-1319136342" target="_blank">Obras Únicas  NFT</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 <!------------TITULO-------------->
     <p class="titulo">Alfredo Mendez</p>
     <br> 
 <!------------PARRAFO------------->
     <article class="descripcion">
-        <h4>Estamos en presencia de una galeria virtual persona de lo cual usted podra disfrutar de numerosas obras e inspiración logrado en años de dedicación y pasión.</h4>
+        <h6>Estamos en presencia de una galeria virtual persona de lo cual usted podra disfrutar de numerosas obras e inspiración logrado en años de dedicación y pasión.</h6>
     </article>
-
-    <div class="cuadros">   
-        <div class="card imagen1" style="width: 18rem;">
-            <img src="img/arlequinMusico.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Arlequin Músico .</p>
-                <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/107150411996499480069635960440331842762791462218925852791369619731775731269633" class="btn btn-primary" target="new">Comprar NFT</a>
-            </div>
-        </div>
-
-        <div class="card imagen1" style="width: 28rem;">
-         <img src="img/toroBravo.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-             <p class="card-text">Toro Bravo.</p>
-             <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/107150411996499480069635960440331842762791462218925852791369619730676219641857/" target="new" class="btn btn-primary">Comprar NFT</a>
-            </div>
-        </div>
-
-        <div class="card imagen1" style="width: 28rem;">
-            <img src="img/Falta poco para llegar.jpeg" class="card-img-top" alt="...">
-               <div class="card-body">
-                <p class="card-text">Falta Poco Para Llegar.</p>
-                <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/107150411996499480069635960440331842762791462218925852791369619732875242897409" target="_blank" class="btn btn-primary">Comprar NFT</a>
-               </div>
-           </div>
+<!------------IMAGENES------------->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/arlequinMusico.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Arlenquín Músico</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Falta poco para llegar.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Falta Poco Para Llegar</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/toroBravo.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Toro Bravo</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </body>
 </html>
